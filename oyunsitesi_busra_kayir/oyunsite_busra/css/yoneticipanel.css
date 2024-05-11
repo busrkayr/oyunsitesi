@@ -1,0 +1,122 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  background-image: url("../img/arkaplan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  backdrop-filter: blur(10px);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 12px;
+}
+
+input[type="text"]:focus {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.edit-button {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #2980b9;
+}
+
+.delete-button {
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.exit-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #3498db;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.exit-button:hover {
+  background-color: #fff;
+  color: #3498db;
+}

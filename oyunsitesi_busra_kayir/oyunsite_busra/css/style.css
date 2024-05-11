@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #222;
+  color: white;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.logo {
+  color: #ff4c4c;
+  font-size: 36px;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.menu-list-item {
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.menu-list-item:hover {
+  color: #ff4c4c;
+}
+
+.menu-list-item a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu-list-item a:hover {
+  color: #ff4c4c;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sidebar {
+  background-color: #222;
+  color: white;
+  height: 100vh;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+}
+
+.sidebar i {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.content-wrapper {
+  margin-left: 60px;
+  padding: 20px;
+}
+
+.featured-content {
+  background: url("dnm3.jpg");
+  background-size: cover;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  margin-left: -208px;
+  transform: translateX(-208px);
+}
+
+.featured-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.featured-desc {
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.853);
+  padding: 30px;
+  margin: 30px 0;
+  font-size: 20px;
+  line-height: 1.6;
+  position: absolute;
+  top: 500px;
+  left: 50px;
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+.featured-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.featured-buttons button {
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: 2px solid #ff4c4c;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.featured-buttons button:hover {
+  background-color: #ff4c4c;
+  color: #222;
+}
+
+.movie-list-filter {
+  margin: 20px 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.movie-list-filter select {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  width: 200px;
+  border: none;
+  outline: none;
+}
+
+.movie-list-container {
+  margin-top: 40px;
+}
+
+.movie-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.movie-item {
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.movie-item:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.movie-item-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.movie-item-title {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.movie-item:hover .movie-item-buttons {
+  opacity: 1;
+}
+
+.movie-item-buttons i {
+  cursor: pointer;
+  opacity: 0.7;
+  font-size: 24px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.arrow {
+  font-size: 60px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  opacity: 0.7;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
